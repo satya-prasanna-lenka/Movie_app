@@ -1,0 +1,193 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 1.8rem;
+    background-color: #39445a;
+    text-transform: capitalize;
+    box-shadow: rgb(104, 104, 105) 0px 20px 30px -10px;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* trending section */
+
+.media {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #282c34;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.6s;
+    height: auto;
+}
+
+.media:hover {
+    background-color: ghostwhite;
+    color: black;
+    transition: 0.3s;
+}
+
+.poster {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 17px;
+}
+
+.subTitle1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2px;
+    padding-bottom: 3px;
+
+}
+
+.trending {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.pageTitle {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    padding: 4px;
+    border-radius: 50px;
+    color: white;
+}
+
+/* .content__landscpe {
+    object-fit: contain;
+    border-radius: 10px;
+} */
+
+.contentModal {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    align-items: center;
+
+}
+
+.contentModal::-webkit-scrollbar {
+    display: none;
+}
+
+.content_portrait {
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.tagline {
+    padding-bottom: 10px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.contentModel_about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    margin-right: 20%;
+
+}
+
+.about_more {
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 2px solid #282c34;
+    border-radius: 20px;
+}
+
+.contentModel_title {
+    margin-top: 10px;
+}
+
+.carasoulItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.carasoul_img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 100px;
+    width: 100px;
+}
+
+.carasole {
+    width: 60vw;
+    height: 300px !important;
+    overflow: hidden;
+    transform: translateY(-20px);
+}
+
+@media (max-width:1200px) {
+    .pageTitle {
+        font-size: 6.4vw;
+    }
+
+    .contentModal {
+        flex-direction: column;
+    }
+
+    .content_portrait {
+        height: 70%;
+    }
+
+
+
+    .contentModel_about {
+        margin-right: 0;
+    }
+
+    .media {
+        height: 40vh;
+    }
+}
+
+@media (max-width:550px) {
+    .media {
+        width: 46%;
+    }
+}

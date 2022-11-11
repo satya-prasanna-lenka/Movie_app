@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #39445a;
+  padding-top: 8vh;
+  color: ghostwhite;
+  padding-bottom: 10vh;
+}
